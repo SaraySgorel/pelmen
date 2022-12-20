@@ -1,0 +1,72 @@
+<html>
+<head>
+<title> My First Page</title>
+</head>
+<script>
+function playAudio(url) 
+{
+ new Audio(url).play();
+}
+</script>
+<body>
+<div id="hello_image">
+<img src="images/pelmen.png" class="rotate" width=50% height=auto
+onclick="playAudio('images/Ebanko_Ebi_menya_po_kitajski_sosi_moj_huj_po_turecki.mp3')">
+</div>
+<title>Шрифт</title>
+  <style>
+   @font-face {
+    font-family: Ultimate-Black-Metal;
+    src: url(images/Ultimate-Black-Metal.ttf);
+   }
+   h1 {
+    font-family: Ultimate-Black-Metal, Ultimate-Black-Metal, cursive;
+	font-size: 50pt
+   }
+  </style>
+<div class="centered"><h1>C dnem pelmeney</h1>
+</div>
+</div>
+</body>
+<style>
+#hello_image
+{
+ position: absolute; 
+ top: 50%; 
+ left: 60%; 
+transform: translate(-50%, -50%);  
+-webkit-filter: drop-shadow(5px 5px 5px #4682B4); 
+ filter: drop-shadow(5px 5px 5px #4682B4); 
+}
+body
+{
+background: url(images/back.gif) no-repeat;
+background-size: 100%;
+    
+}
+.centered 
+{
+ text-align: center;
+ color: #000000;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.centered {
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.rotate 
+{
+ animation: rotation 18s infinite linear;
+}
+@keyframes rotation {
+ from {
+ transform: rotate(0deg);
+ }
+ to {
+ transform: rotate(359deg);
+ }
+}
+<style>
+</html>
